@@ -1,17 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Front End">
+      <UniqueIdentifier>{00c680ec-f462-46dd-b3cb-004068576714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Front End\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Front End\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Back End">
+      <UniqueIdentifier>{bb81b04c-7787-4c73-a4f0-c73d5d58471c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Back End\Header Files">
+      <UniqueIdentifier>{cc7dccbc-ab84-4cd1-a01e-1892a05c445d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Back End\Source Files">
+      <UniqueIdentifier>{81bd863a-5edb-49f0-9c42-3cee51ff2d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EntryPoint">
+      <UniqueIdentifier>{f2fce657-7413-490d-b89e-bca698602d26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Character_Sheet_Form.h">
+      <Filter>Front End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Advantage.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CS_Data.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CS_Data_Factory.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Data_Character_Sheet.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryFactory.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global_Enums.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspiration.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Proficiency.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Roll.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Roll_Factory.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackEndTesting.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Character_Sheet_Form.cpp">
+      <Filter>EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="BackEndTesting.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CS_Data_Factory.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Roll_Factory.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Roll.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CS_Data.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Proficiency.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inspiration.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Advantage.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

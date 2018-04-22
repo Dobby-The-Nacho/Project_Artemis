@@ -93,6 +93,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,6 +126,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Advantage.cpp" />
+    <ClCompile Include="BackEndTesting.cpp" />
+    <ClCompile Include="Character_Sheet_Form.cpp" />
+    <ClCompile Include="CS_Data.cpp" />
+    <ClCompile Include="CS_Data_Factory.cpp" />
+    <ClCompile Include="Dice.cpp" />
+    <ClCompile Include="Inspiration.cpp" />
+    <ClCompile Include="Proficiency.cpp" />
+    <ClCompile Include="Roll.cpp" />
+    <ClCompile Include="Roll_Factory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Advantage.h" />
+    <ClInclude Include="BackEndTesting.h" />
+    <ClInclude Include="Character_Sheet_Form.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CS_Data.h" />
+    <ClInclude Include="CS_Data_Factory.h" />
+    <ClInclude Include="Data_Character_Sheet.h" />
+    <ClInclude Include="Dice.h" />
+    <ClInclude Include="FactoryFactory.h" />
+    <ClInclude Include="Global_Enums.h" />
+    <ClInclude Include="Inspiration.h" />
+    <ClInclude Include="Proficiency.h" />
+    <ClInclude Include="Roll.h" />
+    <ClInclude Include="Roll_Factory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
