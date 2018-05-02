@@ -69,6 +69,12 @@
     <ClInclude Include="BackEndTesting.h">
       <Filter>Back End\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Damage_Type.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character_Sheet_Form.cpp">
@@ -99,6 +105,12 @@
       <Filter>Back End\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Dice.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Damage_Type.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer.cpp">
       <Filter>Back End\Source Files</Filter>
     </ClCompile>
   </ItemGroup>

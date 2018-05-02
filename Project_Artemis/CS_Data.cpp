@@ -1,4 +1,5 @@
 #include "CS_Data.h"
+#include "Observer.h"
 
 //------Accessors------
 Proficiency_Enum CS_Data::_getProficiencyStatus() { 
@@ -13,6 +14,10 @@ Inspiration_Enum CS_Data::_getInspirationStatus() {
 	return _inspiration->_getStatus(); 
 };
 
+Damage_Type_Enum CS_Data::_getDamageType() {
+	return _damage_type->_getStatus();
+}
+
 Dice* CS_Data::_getDice() { 
 	return _die;
 };
@@ -24,6 +29,14 @@ int CS_Data::_getDieNum() {
 int CS_Data::_getDieCount() { 
 	return _die->_getDieCount(); 
 };
+
+std::string CS_Data::_getValue() {
+	return _value;
+};
+
+void CS_Data::_getObserver() {
+	_observer->stringify();
+}
 
 //------Mutators-------
 void CS_Data::_setProficiency(Proficiency* argProficiency) { 
@@ -38,6 +51,10 @@ void CS_Data::_setInspiration(Inspiration* argInspiration) {
 	_inspiration = argInspiration; 
 };
 
+void CS_Data::_setDamageType(Damage_Type* argDamageType) {
+	_damage_type = argDamageType;
+};
+
 void CS_Data::_setDie(Dice* argDie) {
 	_die = argDie;
 };
@@ -46,6 +63,6 @@ void CS_Data::_setValue(std::string arg) {
 	_value = arg;
 };
 
-std::string CS_Data::_getValue() {
-	return _value;
-};
+void CS_Data::_setObserver(Observer* argObs) {
+	_observer = argObs;
+}

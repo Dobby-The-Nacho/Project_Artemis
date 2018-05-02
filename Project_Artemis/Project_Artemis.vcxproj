@@ -93,7 +93,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
@@ -138,8 +138,10 @@
     <ClCompile Include="Character_Sheet_Form.cpp" />
     <ClCompile Include="CS_Data.cpp" />
     <ClCompile Include="CS_Data_Factory.cpp" />
+    <ClCompile Include="Damage_Type.cpp" />
     <ClCompile Include="Dice.cpp" />
     <ClCompile Include="Inspiration.cpp" />
+    <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Proficiency.cpp" />
     <ClCompile Include="Roll.cpp" />
     <ClCompile Include="Roll_Factory.cpp" />
@@ -152,11 +154,13 @@
     </ClInclude>
     <ClInclude Include="CS_Data.h" />
     <ClInclude Include="CS_Data_Factory.h" />
+    <ClInclude Include="Damage_Type.h" />
     <ClInclude Include="Data_Character_Sheet.h" />
     <ClInclude Include="Dice.h" />
     <ClInclude Include="FactoryFactory.h" />
     <ClInclude Include="Global_Enums.h" />
     <ClInclude Include="Inspiration.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="Proficiency.h" />
     <ClInclude Include="Roll.h" />
     <ClInclude Include="Roll_Factory.h" />

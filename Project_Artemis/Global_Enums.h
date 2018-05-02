@@ -42,3 +42,24 @@ enum Die_Enum
 	D6 = 6,
 	D4 = 4,
 };
+
+enum Damage_Type_Enum
+{
+	NO_DAMAGE_TYPE = 0,
+	BLUDGEONING = 1,
+	PIERCING = 2,
+	SLASHING = 3,
+};
+
+enum Weapon_Enum
+{
+	NO_WEAPON = 0,
+	WEAPON = 1,
+};
+
+enum Observer_Status_Enum
+{
+	NO_OBSERVING = 0,
+	OBSERVER = 1,
+	OBSERVABLE = 2,
+};
