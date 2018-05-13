@@ -75,6 +75,9 @@
     <ClInclude Include="Observer.h">
       <Filter>Back End\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DND_Math.h">
+      <Filter>Back End\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Character_Sheet_Form.cpp">
@@ -111,6 +114,9 @@
       <Filter>Back End\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Observer.cpp">
+      <Filter>Back End\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DND_Math.cpp">
       <Filter>Back End\Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -38,4 +38,7 @@ public:
 	void _setDie(Dice*);
 	void _setObserver(Observer*);
 
+	//--Simulated Events--
+	void _changeValue(std::string);
+
 };

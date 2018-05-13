@@ -35,7 +35,7 @@ std::string CS_Data::_getValue() {
 };
 
 void CS_Data::_getObserver() {
-	_observer->stringify();
+	_observer->_stringify();
 }
 
 //------Mutators-------
@@ -66,3 +66,8 @@ void CS_Data::_setValue(std::string arg) {
 void CS_Data::_setObserver(Observer* argObs) {
 	_observer = argObs;
 }
+
+void CS_Data::_changeValue(std::string arg) {
+	_setValue(arg);
+	_observer->_notifyObservers();
+};
