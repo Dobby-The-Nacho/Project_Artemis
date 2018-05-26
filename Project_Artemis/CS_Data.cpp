@@ -35,7 +35,14 @@ std::string CS_Data::_getValue() {
 };
 
 void CS_Data::_getObserver() {
-	_observer->_stringify();
+
+	std::list<Observer*>::iterator pos = _observers.begin();
+	while (pos != _observers.end()) {
+
+		(*pos)->_stringify();
+
+		pos++;
+	}
 }
 
 //------Mutators-------
@@ -64,10 +71,22 @@ void CS_Data::_setValue(std::string arg) {
 };
 
 void CS_Data::_setObserver(Observer* argObs) {
-	_observer = argObs;
-}
+	_observers.push_back(argObs);
+};
+
+void CS_Data::_removeObserver(Observer* argObs) {
+	_observers.remove(argObs);
+};
 
 void CS_Data::_changeValue(std::string arg) {
+
+	std::list<Observer*>::iterator pos = _observers.begin();
+	while (pos != _observers.end()) {
+
+		(*pos)->_notifyObservers();
+
+		pos++;
+	}
+
 	_setValue(arg);
-	_observer->_notifyObservers();
 };

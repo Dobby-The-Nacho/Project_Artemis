@@ -10,7 +10,8 @@ void Observer_Enabled::_registerObserver(CS_Data* CS_arg) {
 	_observers.back()->_setObserver(this);
 };
 
-void Observer_Enabled::_removeObservable(CS_Data* CS_arg) {
+void Observer_Enabled::_removeObservable() {
+	_observable->_removeObserver(this);
 	_observable = NULL;
 };
 

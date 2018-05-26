@@ -5,6 +5,7 @@
 #include "Damage_Type.h"
 #include "Dice.h"
 #include <string>
+#include <list>
 
 class Observer;
 class CS_Data {
@@ -15,7 +16,7 @@ private:
 	Inspiration* _inspiration;
 	Damage_Type* _damage_type;
 	Dice* _die;
-	Observer* _observer;
+	std::list<Observer*> _observers;
 	
 public:
 	//------Accessors------
@@ -37,6 +38,7 @@ public:
 	void _setDamageType(Damage_Type*);
 	void _setDie(Dice*);
 	void _setObserver(Observer*);
+	void _removeObserver(Observer*);
 
 	//--Simulated Events--
 	void _changeValue(std::string);

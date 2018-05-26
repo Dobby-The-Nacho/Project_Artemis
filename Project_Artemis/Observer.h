@@ -19,7 +19,7 @@ protected:
 public:
 	void _registerObservable(CS_Data*);
 	void _registerObserver(CS_Data*);
-	void _removeObservable(CS_Data*);
+	void _removeObservable();
 	void _removeObserver(CS_Data*);
 	void _stringify();
 	void _notifyObservers();
